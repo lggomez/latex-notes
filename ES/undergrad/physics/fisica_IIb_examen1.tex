@@ -1,0 +1,103 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{babel}
+\usepackage[a4paper, margin=0.5in]{geometry}
+\begin{document}
+Constantes
+
+$\qquad${*}$k=8,99\times10^{9}\frac{Nm^{2}}{C^{2}}$ (cte. de Coulomb)
+
+$\qquad${*}$\epsilon_{0}=$$\frac{1}{4\pi k}=8,85\times10^{-12}\frac{C^{2}}{Nm^{2}}$
+(permitividad del vacio)
+
+Unidades
+
+
+Ley de Coulomb: $\overrightarrow{F}_{12}=\frac{kq_{1}q_{2}}{r_{12}^{2}}\hat{r}_{12}$
+
+Rel. entre fz electrica y gravitatoria: $\frac{F_{e}}{F_{g}}=\frac{ke^{2}}{Gm_{p}m_{e}}$
+
+Campo electrico:$\overrightarrow{E}=\frac{\overrightarrow{F}}{q_{0}}$
+
+Dipolos
+
+$\qquad${*} momento: $\overrightarrow{P}=q\overrightarrow{L}$, {*} momento sobre un dipolo: $\overrightarrow{\tau}=\overrightarrow{p}\times\overrightarrow{E}$
+
+Campo para una DDC continua: $\overrightarrow{E}=\int d\overrightarrow{E}=\int\frac{k\mathbf{\hat{r}}}{r^{2}}dq$
+(ley de Coulomb), con $dq=\rho dV,\sigma dA,\lambda dL$ (segun geometria)
+
+Ley de Gauss: $\phi_{neto}=\varoint_{S}\overrightarrow{E}\cdot\hat{\mathbf{n}}dA=\varoint_{S}E_{n}dA=\frac{Q_{interior}}{\epsilon_{0}}$
+
+Campos electricos en DDC:
+
+$\qquad${*} carga lineal infinita: $Er=\textrm{sign}(z)\cdot\frac{\sigma}{2\epsilon_{0}}$
+
+$\qquad${*} esfera solida cargada: $Er=\frac{1}{4\pi\epsilon_{0}}\frac{Q}{r^{2}}$
+con $r>R$, $Er=0$ con $r<R$
+
+Diferencia de potencial: $\Delta V=V_{b}-V_{a}=\frac{\triangle U}{q_{0}}=-\int_{a}^{b}\overrightarrow{E}\cdot d\overrightarrow{\ell}$,
+con el diferencial de potencial $dV=-\overrightarrow{E}\cdot d\overrightarrow{\text{\ensuremath{\ell}}}$
+
+Potencial de coulomb: $V=\frac{kq}{r}$, para una carga puntual: $V=\frac{kq}{r}-\frac{kq}{r_{ref}}$
+
+Potencial debido a DDC: $V=\int\frac{kdq}{r}$ (en volumenes finitos)
+
+Campo a partir del potencial y componentes: $E_{tan}=-\frac{dV}{d\ell}$
+
+Relacion general entre $\overrightarrow{E}$ y $V$: $\overrightarrow{E}=-\overrightarrow{\nabla}V$
+
+EP de 2 cargas puntuales: $U=q_{0}V=\frac{kq_{0}q}{r}$
+
+Funciones potenciales:
+
+$\qquad${*} eje de un anillo uniformemente cargado: $V=\frac{kQ}{\sqrt{z^{2}+a^{2}}}$
+
+$\qquad${*} eje de un disco uniformemente cargado: $V=2\pi k\sigma\left|z\right|\left(\sqrt{1+\frac{R^{2}}{z^{2}}}-1\right)$
+
+$\qquad${*} plano infinito cargado: $V=V_{0}-2\pi k\sigma\left|z\right|$
+
+$\qquad${*} corteza esferica de carga: $V=\begin{cases}
+\frac{kQ}{r} & r\geq R\\
+\frac{kQ}{R} & r\leq R
+\end{cases}$
+
+$\qquad${*} linea infinita de carga: $V=2k\lambda\ln\frac{R_{ref}}{R}$
+
+EP electrostatica:
+
+{*} cond. de carga $Q$ y poot. $V$: $U=\frac{1}{2}QV$ $\quad${*} sistema de cond.: $U=\frac{1}{2}\underset{i}{\sum}Q_{i}V_{i}$
+
+Capacidad: $C=\frac{Q}{V}$, y en geometrias:
+
+$\qquad${*}cond. esferico aislado: $C=4\pi\epsilon_{0}R$
+
+$\qquad${*}placas paralelas: $C=\frac{\epsilon_{0}A}{d}$
+
+$\qquad${*}cond. cilindrico: $C=\frac{2\pi\epsilon_{0}L}{\ln\frac{R_{2}}{R_{1}}}$
+
+Energia almacenada en un condensador: $U=\frac{1}{2}QV=\frac{1}{2}\frac{Q^{2}}{C}=\frac{1}{2}CV^{2}$
+
+Densidad energetica debida a un campo electrico: $u_{e}=\frac{1}{2}\epsilon_{0}E^{2}$
+
+Intensidad: $I=\frac{\triangle Q}{\triangle t}$
+
+Densidad de corriente: $\overrightarrow{J}=qn\overrightarrow{v_{d}}$,
+donde $n$ es la densidad numerica de electrones
+
+Resistencia: $R=\frac{V}{I}=\rho\frac{L}{A}$
+
+Ley de Ohm: $V=IR$, $R$ constante
+
+Descarga de condensador:
+
+$\qquad${*} fx de carga: $Q(t)=Q_{0}e^{-\frac{t}{RC}}=Q_{0}e^{-\frac{t}{\tau}}$,
+con $\tau=RC$ $\qquad${*} corriente en el circuito: $I=\frac{dQ}{dt}=\frac{V_{0}}{R}e^{-\frac{t}{RC}}=I_{0}e^{-\frac{t}{\tau}}$
+
+Carga de un condensador:
+
+$\qquad${*} fx de carga: $Q=C\mathscr{E\left[\mathit{\mathrm{1}-\mathrm{\mathit{e^{-\frac{t}{RC}}}}}\right]=\mathit{Q_{0}\left(\mathrm{1}-e^{-\frac{t}{\tau}}\right)}}$ $\qquad${*} corriente en el circuito: $I=\frac{\mathscr{E}}{R}e^{-\frac{t}{RC}}=I_{0}e^{-\frac{t}{\tau}}$
+\end{document}

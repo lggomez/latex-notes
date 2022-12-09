@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{babel}
+\usepackage[a4paper, margin=0.7in]{geometry}
+\begin{document}
+
+\textbf{\underline{Capacidad:}} $C=\frac{Q}{V}$, y en geometrias:
+
+$\qquad${*}cond. esferico aislado: $C=4\pi\epsilon_{0}R$
+
+$\qquad${*}placas paralelas: $C=$$\frac{\epsilon_{0}A}{d}$
+
+$\qquad${*}cond. cilindrico: $C=\frac{2\pi\epsilon_{0}L}{\ln\frac{R_{2}}{R_{1}}}$
+
+Energia almacenada en un condensador: $U=\frac{1}{2}QV=\frac{1}{2}\frac{Q^{2}}{C}=\frac{1}{2}CV^{2}$
+
+Densidad energetica debida a un campo electrico: $u_{e}=\frac{1}{2}\epsilon_{0}E^{2}$
+
+\textbf{\underline{Capacidades equivalentes:}}
+
+$\qquad${*} paralelo: $C_{eq}=\underset{i}{\sum}C_{i}$ $\qquad${*} serie: $C_{eq}=\frac{1}{\underset{i}{\sum}\frac{1}{C_{i}}}$
+
+\textbf{\underline{Intensidad:}} $I=\frac{\triangle Q}{\triangle t}$
+
+Densidad de corriente: $\overrightarrow{J}=qn\overrightarrow{v_{d}}$,
+donde $n$ es la densidad numerica de electrones
+
+\textbf{\underline{Resistencia:}}: $R=\frac{V}{I}=\rho\frac{L}{A}$
+
+\textbf{\underline{Resistencias equivalentes:}}
+
+$\qquad${*} serie: $R_{eq}=\underset{i}{\sum}R_{i}$ $\qquad${*} paralelo: $R_{eq}=\frac{1}{\underset{i}{\sum}\frac{1}{Ri}}$
+
+
+\textbf{\underline{Ley de Ohm:}} $V=IR$, $R$ constante
+
+\textbf{\underline{Potencia suministrada:}} $P=IV$
+
+$\qquad${*}disipada en una resistencia: $P=IV=I^{2}R=\frac{V^{2}}{R}$
+
+$\qquad${*}disipada por un FEM: $P=I\mathscr{E}$
+
+\textbf{\underline{Bateria:}}
+
+$\qquad${*} potencial en los bornes: $V_{a}-V_{b}=\mathscr{E}-Ir$ 
+
+$\qquad${*} energia total almacenada: $E_{almacenada}=Q\mathscr{E}$
+
+\textbf{\underline{Descarga de condensador:}}
+
+$\qquad${*} fx de carga: $Q(t)=Q_{0}e^{-\frac{t}{RC}}=Q_{0}e^{-\frac{t}{\tau}}$,
+con $\tau=RC$ 
+
+$\qquad${*} corriente en el circuito: $I=\frac{dQ}{dt}=\frac{V_{0}}{R}e^{-\frac{t}{RC}}=I_{0}e^{-\frac{t}{\tau}}$
+
+\textbf{\underline{Carga de un condensador:}}
+
+$\qquad${*} fx de carga: $Q=C\mathscr{E\left[\mathit{\mathrm{1}-\mathrm{\mathit{e^{-\frac{t}{RC}}}}}\right]=\mathit{Q_{0}\left(\mathrm{1}-e^{-\frac{t}{\tau}}\right)}}$ 
+
+$\qquad${*} corriente en el circuito: $I=\frac{\mathscr{E}}{R}e^{-\frac{t}{RC}}=I_{0}e^{-\frac{t}{\tau}}$
+
+\end{document}

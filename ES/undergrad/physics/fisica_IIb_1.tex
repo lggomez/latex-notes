@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{babel}
+\usepackage[a4paper, margin=0.7in]{geometry}
+\begin{document}
+
+\textbf{\underline{Constantes}}
+
+$\qquad${*}$k=8,99\times10^{9}\frac{Nm^{2}}{C^{2}}$ (cte. de Coulomb)
+
+$\qquad${*}$\epsilon_{0}=$$\frac{1}{4\pi k}=8,85\times10^{-12}\frac{C^{2}}{Nm^{2}}$
+(permitividad del vacio)
+
+\textbf{\underline{Unidades}}
+
+$\quad$$1J=N.m$, $1A=1\frac{C}{s}$, $1V=\frac{J}{C}$, $1V=\frac{J}{C}$, $1F=\frac{C}{V}$, $1\Omega=\frac{V}{A}$
+
+\textbf{\underline{Ley de Coulomb:}} $F=\frac{kq_{1}q_{2}}{r^{2}}$ o $\overrightarrow{F}_{12}=\frac{kq_{1}q_{2}}{r_{12}^{2}}\hat{r}_{12}$
+
+$\quad$Rel. entre fz electrica y gravitatoria: $\frac{F_{e}}{F_{g}}=\frac{ke^{2}}{Gm_{p}m_{e}}$
+
+\textbf{\underline{Campo electrico:}} $\overrightarrow{E}=\frac{\overrightarrow{F}}{q_{0}}$
+
+$\quad$Campo electrico en un punto:$\overrightarrow{E}_{ip}=\frac{kq_{i}}{r_{ip}^{2}}\hat{r}_{ip}$
+y en distrubucion discreta: $\overrightarrow{E}_{p}=\underset{i}{\sum}\overrightarrow{E}_{ip}$
+
+\textbf{\underline{Dipolos}}
+
+$\qquad${*} momento: $\overrightarrow{P}=q\overrightarrow{L}$, campo: $E=\frac{2kP}{\left|x\right|^{3}}$,
+EP: $U=-\overrightarrow{p}\cdot\overrightarrow{E}+U_{0}$ 
+
+$\qquad${*} momento sobre un dipolo: $\overrightarrow{\tau}=\overrightarrow{p}\times\overrightarrow{E}$
+
+Acel. de una particula en un campo: $\overrightarrow{a}=\frac{\sum\overrightarrow{F}}{m}=\frac{q}{m}\overrightarrow{E}\quad$, con: 
+
+$\quad\mathrm{\varDelta x=\frac{v_{x}^{2}-v_{0x}^{2}}{2a_{x}}}$
+
+$\quad\varDelta y=v_{0y}t+\frac{1}{2}a_{y}t^{2}\quad$ y$\quad$ $t=\frac{\varDelta x}{v_{0}}$
+
+\textbf{\underline{Campo para una DCC:}} $\overrightarrow{E}=\int d\overrightarrow{E}=\int\frac{k\mathbf{\hat{r}}}{r^{2}}dq$
+(ley de Coulomb), con:
+
+$\quad dq=\rho dV,\sigma dA,\lambda dL$ (segun geometria)
+
+\textbf{\underline{Ley de Gauss:}} $\phi_{neto}=\varoint_{S}\overrightarrow{E}\cdot\hat{\mathbf{n}}dA=\varoint_{S}E_{n}dA=\frac{Q_{interior}}{\epsilon_{0}}$
+
+\textbf{\underline{Casos de DCC:}}
+
+$\qquad${*} carga lineal infinita: $Er=\textrm{sign}(z)\cdot\frac{\sigma}{2\epsilon_{0}}$
+
+$\qquad${*} esfera solida cargada: $Er=\frac{1}{4\pi\epsilon_{0}}\frac{Q}{r^{2}}$
+con $r>R$, $Er=0$ con $r<R$
+
+\textbf{\underline{Diferencia de potencial}} $\Delta V=V_{b}-V_{a}=\frac{\triangle U}{q_{0}}=-\int_{a}^{b}\overrightarrow{E}\cdot d\overrightarrow{\ell}$, donde:
+
+$\quad$$dV=-\overrightarrow{E}\cdot d\overrightarrow{\text{\ensuremath{\ell}}}$
+
+$\qquad$Potencial de coulomb: $V=\frac{kq}{r}$, para una carga puntual: $V=\frac{kq}{r}-\frac{kq}{r_{ref}}$
+
+$\qquad$Potencial en un sistema de cargas discretas: $V=\underset{i}{\sum}\frac{kq_{i}}{r_{i}}$
+
+$\qquad$Potencial debido a DDC: $V=\int\frac{kdq}{r}$ (en volumenes finitos)
+
+Campo a partir del potencial y componentes: $E_{tan}=-\frac{dV}{d\ell}$,
+$E_{x}=-\frac{dV(x)}{dx}$, $E_{r}=-\frac{dV(r)}{dr}$
+
+Relacion general entre $\overrightarrow{E}$ y $V$: $\overrightarrow{E}=-\overrightarrow{\nabla}V=-(\frac{\partial V}{\partial x}\hat{\boldsymbol{i}}+\frac{\partial V}{\partial y}\hat{\boldsymbol{j}}+\frac{\partial V}{\partial z}\hat{\boldsymbol{k}})$
+
+EP de 2 cargas puntuales: $U=q_{0}V=\frac{kq_{0}q}{r}$
+
+\textbf{\underline{Funciones potenciales:}}
+
+$\qquad${*} eje de un anillo uniformemente cargado: $V=\frac{kQ}{\sqrt{z^{2}+a^{2}}}$
+
+$\qquad${*} eje de un disco uniformemente cargado: $V=2\pi k\sigma\left|z\right|\left(\sqrt{1+\frac{R^{2}}{z^{2}}}-1\right)$
+
+$\qquad${*} plano infinito cargado: $V=V_{0}-2\pi k\sigma\left|z\right|$
+
+$\qquad${*} corteza esferica de carga: $V=\begin{cases}
+\frac{kQ}{r} & r\geq R\\
+\frac{kQ}{R} & r\leq R
+\end{cases}$
+
+$\qquad${*} linea infinita de carga: $V=2k\lambda\ln\frac{R_{ref}}{R}$
+
+\textbf{\underline{EP electrostatica:}}
+
+$\quad${*} cargas puntuales: $U=\frac{1}{2}\underset{i}{\sum}q_{i}V_{i}$ 
+
+$\quad${*} cond. de carga $Q$ y pot. $V$: $U=\frac{1}{2}QV$ 
+
+$\quad${*} sistema de cond.: $U=\frac{1}{2}\underset{i}{\sum}Q_{i}V_{i}$
+
+\end{document}
