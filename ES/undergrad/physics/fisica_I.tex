@@ -1,0 +1,411 @@
+%% LyX 2.3.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{luainputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=0.5in,bmargin=0.5in,lmargin=0.5in,rmargin=0.5in}
+\usepackage{amsmath}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{babel}
+\usepackage{bigints}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\textbf{\underline{Mediciones - Errores:}}
+
+Errores:
+
+$\qquad${*}Estimador de x: $\overline{X}=$$\frac{\sum_{i=1}^{n}X_{i}}{n}$
+
+$\qquad${*}Error cuadrático medio: $\sigma_{cm}=\frac{1}{n-1}\sum_{i=1}^{n}\left(X_{i}-\hat{X_{i}}\right)^{2}$
+
+$\qquad${*}Desviacion estándar: $\sigma_{x}=\frac{\sigma_{cm}}{\sqrt{n}}=\frac{1}{n(n-1)}\sum_{i=1}^{n}\left(X_{i}-\hat{X_{i}}\right)^{2}$
+
+$\qquad${*}Error de medición en $X$ $(\Delta X$o $\sigma_{f})$:
+$\begin{cases}
+\sqrt{\sigma_{est}^{2}+\sigma_{nom}^{2}}=\sqrt{\sigma_{est}^{2}+\sigma_{ap}^{2}+\sigma_{def}^{2}+\sigma_{int}^{2}+\sigma_{exact}^{2}}\\
+\sigma_{nom}^{2}\approx\sigma_{ap}^{2}\;\Longrightarrow\;\sigma_{f}\approx\sqrt{\sigma_{est}^{2}+\sigma_{ap}^{2}}
+\end{cases}$
+
+Propagación de errores:
+
+$\qquad${*}Error de fx. de medición: $\sigma f=\sqrt{\left(\frac{\partial f}{\partial x}\right)^{2}\sigma_{x}^{2}+\left(\frac{\partial f}{\partial y}\right)^{2}\sigma_{y}^{2}+\left(\frac{\partial f}{\partial z}\right)^{2}\sigma_{z}^{2}+\cdots}$
+
+$\qquad${*}Coefic. de correlación: $r_{xy}=\frac{\left(\sum_{i}x_{i}y_{i}-n\bar{x}\bar{y}\right)^{2}}{\left(\sum_{i}x_{i}^{2}-n\bar{x}^{2}\right)~\left(\sum_{i}y_{i}^{2}-n\bar{y}^{2}\right)^{2}}$
+
+Método de cuadrados mínimos: Se regresiona la recta $y=ax+b$ tal
+que
+
+$\qquad$$a=\frac{\sum_{i}x_{i}y_{i}-n\bar{x}\bar{y}}{\sum_{i}x_{i}^{2}-n\bar{x}^{2}}$
+
+$\qquad$$b=\overline{y}-a\overline{x}$
+
+$\qquad$$\Delta b=\Delta_{0}\frac{\sum_{i}x_{i}^{2}}{n\left[\sum_{i}x_{i}^{2}-n\bar{x}^{2}\right]}$,
+$\Delta a=\frac{\Delta^{0}}{\sqrt{\sum_{i}x_{i}^{2}-n\bar{x}^{2}}}$,
+con $\Delta_{0}=$$\frac{1}{n-2}\sum_{i}\left(y_{i}+ax_{i}-b\right)^{2}$
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{\underline{Vectores:}}
+
+$\qquad${*}Componentes y módulo: $A_{x}=A\cos\theta$,$\:$$A_{y}=A\sin\theta$,$\:$$A=\sqrt{A_{x}^{2}+A_{y}^{2}}$
+
+$\qquad${*}Suma: si $\mathbf{C=A+B}$ entonces $C_{x}=A_{x}+B_{x}$$\:$y$\:$$\:C_{y}=A_{y}+B_{y}$
+
+$\qquad${*}Unitarios (versores): $\mathbf{A}$ puede escribirse en
+función de los vectores unitarios $\mathbf{\hat{i},\hat{k},\hat{j}}$, 
+
+dirigidos a través de los ejes $x,y,z$$\,$:$\,$$\mathrm{\mathbf{A}}=A_{x}\hat{\mathbf{i}}+A_{y}\hat{\mathbf{j}}+A_{z}\hat{\mathbf{k}}$
+
+$\qquad${*}Posición: el vector posición $\mathbf{r}$ apunta desde
+el origen a la posición de la partícula
+
+$\qquad${*}Velocidad instantánea: es la variación de $\mathbf{r}$
+con respecto a $t$. 
+
+Su módulo es la velocidad y su dirección la del movimiento
+
+$\qquad\qquad$$\displaystyle \mathbf{v}=\lim\limits_{\Delta t \to 0}=\displaystyle\frac{\Delta \mathbf{r}}{\Delta t}=\displaystyle\frac{d\mathbf{r}}{dt}$
+
+$\qquad\qquad$$\displaystyle \mathbf{a}=\lim\limits_{\Delta t \to 0}=\displaystyle\frac{\Delta \mathbf{v}}{\Delta t}=\displaystyle\frac{d\mathbf{v}}{dt}$
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{\underline{Cinemática en $\rm I\!R$:}}
+
+Desplazamiento: $\Delta x=x_{2}-x_{1}$
+
+Velocidad:
+
+$\qquad${*}Media: $\mathbf{v}_{m}=\frac{\Delta\mathbf{r}}{\Delta t}\,$,
+$\mathbf{v}=\frac{d\mathbf{r}}{dt}$, $v=\frac{dr}{dt}$
+
+$\qquad${*}Instantánea: $v(t)=\lim\limits_{\Delta t \to \infty}\frac{\Delta x}{\Delta t}=\frac{dx}{dt}$
+
+$\qquad${*}Relativa: Dada una partícula de vel. $v_{pA}$ respecto
+de un sist. de coor. $A$ moviéndose
+
+con velocidad $v_{AB}$ respecto a otro sist. de coor. $B$, la velocidad
+de la partícula relativa a $B$ es:
+
+$\qquad\quad\quad$$v_{pB}$= $v_{pA}$+ $v_{AB}$
+
+Aceleración:
+
+$\qquad${*}Media: $a_{m}=\frac{\Delta\mathbf{v}}{\Delta t}$
+
+$\qquad${*}Instantánea: $a=\frac{d\mathbf{v}}{dt}=\frac{d^{2}x}{dt^{2}}$
+
+$\qquad${*}Gravitatoria: $g=9,81\mathrm{\frac{m}{s^{2}}\approx10\mathrm{\frac{m}{s^{2}}}}$
+
+$\qquad${*}MRU: $x=x_{0}+v\Delta t$, $\Delta t=\frac{\Delta v}{a}\quad\Longrightarrow\quad v^{2}=v_{0}^{2}+2a\Delta x$
+
+$\qquad${*}MRUV: $\begin{cases}
+x(t)=x_{0}+v_{0}\Delta t+\frac{1}{2}a\Delta t^{2}\\
+v(t)=v_{0}+a\Delta t
+\end{cases}$
+
+\textbf{\pagebreak}
+
+\textbf{\underline{Desplzamiento y velocidad (formas integrales):}}
+
+$\qquad$$v$ como area bajo curva de $v(t)$: $\Delta x=\lim\limits_{\Delta t \to 0}=\sum_{i}v_{i}\,\Delta t_{i}=\displaystyle\int_{t1}^{t2}v\, dt$
+
+$\qquad$$a$ como area bajo curva de $a(r)$: 
+
+\begin{align}
+    \Delta v &=\lim\limits_{\Delta t \to 0}=\sum_{i}a_{i}\,\Delta t_{i}=\displaystyle\int_{t1}^{t2}a\, dt\\
+    v &=v_{0} +at\\
+    \Delta x &= x-x_{0} = v_{m}t = \frac{1}{2}(v_{0}+v)t\\
+    \Delta x &= x-x_{0} = v_{0}t + \frac{1}{2}at^{2}\\
+    v^{2} &= v_{0}^{2}+2a\, \Delta x
+\end{align}
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{\underline{Cinemática en $\rm I\!R^{2}$ y $\rm I\!R^{3}$:}}
+
+$\qquad${*}Velocidad relativa: Dada una partícula de vel. $\mathbf{v}_{pA}$
+respecto de un sist. de coor. $A$ moviéndose
+
+con velocidad $\mathbf{v}_{AB}$ respecto a otro sist. de coor. $B$,
+la velocidad de la partícula relativa a $B$ es:
+
+$\qquad\quad\quad$$\mathbf{v}_{pB}$= $\mathbf{v}_{pA}$+ $\mathbf{v}_{AB}$
+
+Movimientos de proyectiles:
+
+$\qquad${*}Independencia de movimiento: $a_{x}=0,\;a_{y}=-g$
+
+$\qquad${*}Dependencia con el tiempo:
+
+$\qquad\quad$$\Delta\mathbf{v}=\mathbf{g}t,\;\Delta r=v_{0}t+\frac{1}{2}gt^{2}$,
+con $\mathbf{g}=-g\mathbf{\hat{j}}$
+
+$\qquad${*}Alcance: $v_{x}\Delta t$
+
+Caida libre/Tiro Vertical:$\begin{cases}
+y(t)=y_{0}+v_{0}\Delta t\pm\frac{1}{2}g\Delta t^{2} & h_{max}=y(t)/y=0\\
+v(t)=v_{0}\pm g\Delta t & \Delta t=t/x(t)=0\\
+a(t)=\pm\Delta t & x_{max}=x(\Delta t)=\Delta x
+\end{cases}$
+
+Tiro Oblicuo:
+
+$\qquad${*}MRU: $\begin{cases}
+x(t)=x_{0}+v_{0}\cos\theta\Delta t\\
+v_{x}(t)=v_{0}\cos\theta & \theta=\arctan\frac{v_{y}}{v_{x}}\\
+a_{x}(t)=0
+\end{cases}$
+
+$\qquad${*}MRUV: $\begin{cases}
+y(t)=y_{0}+v_{0}\sin\theta\Delta t-\frac{1}{2}g\Delta t^{2}\\
+v_{y}(t)=v_{0}\sin\theta-g\Delta t & v=\sqrt{v_{x}^{2}+v_{y}^{2}}\\
+a_{y}(t)=-g
+\end{cases}$
+
+{*}Rotación:
+
+$\qquad${*}MCU:$\begin{cases}
+\theta(t)=\theta_{0}+\omega(t-t_{0})+\frac{1}{2}\alpha(t-t_{0})^{2} & \Delta\theta=\frac{\omega_{f}-\omega_{i}}{2}t\\
+\omega=\frac{d\theta}{dt}=\frac{\Delta\theta}{\Delta t}=\omega_{0}+\alpha(t-t_{0})\\
+\alpha=\frac{\Delta\omega}{\Delta t}=\frac{d\omega}{dt}=\frac{d^{2}\theta}{dt}=\frac{\omega-\omega_{0}}{t-t_{0}}
+\end{cases}$
+
+$\qquad${*}Velocidad tangencial: $v_{t}=\omega R$
+
+$\qquad${*}Aceleraciones tangencial y centrípeta: $a_{c}=\frac{v^{2}}{R}=\omega^{2}R$,
+$a_{t}=\alpha R$
+
+$\qquad${*}Tensión de corte (cuerda): $\sum F_{c}=T=ma_{c}=m\omega^{2}R=m\frac{v^{2}}{r}$,
+dada la tensión $T$
+
+$\tau = \mathbf{r}_1\times\mathbf{F}_1 + \mathbf{r}_2\times\mathbf{F}_2 + \ldots + \mathbf{r}_N\times\mathbf{F}_N$
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{\underline{Leyes de Newton - Dinámica:}}
+
+$\qquad${*}Primera ley (incercia): Un objeto en reposo permanece
+estático a menos que actúe una fuerza 
+
+$\qquad\quad$externa neta; Un objeto en movimiento continúa en velocidad
+constante a menos que 
+
+$\qquad\quad$actúe una fuerza externa neta (sistema de tipo inercial)
+
+$\qquad${*}Segunda ley (fundamental de dinámica): $\sum\mathbf{F}=m\mathbf{a}$
+(fuerza resultante)
+
+$\qquad${*}Tercera ley (acción-reacción): $\mathbf{F}_{A,B}=\mathbf{-F}_{B,A}$
+(pares iguales y opuestos)
+
+\textbf{\pagebreak}
+
+\textbf{\underline{Fuerza - Momento:}}
+
+Fueza - definiciones:
+
+$\qquad${*}Fuerza: $\mathbf{F}=m\mathbf{a}$, $\mathrm{\left[N\right]=\frac{1kg}{1m/s^{2}}=\frac{kg\:m}{s^{2}}}$
+
+$\qquad${*}Sumatorias: $\sum F_{x}=ma_{x},\;\sum F_{y}=ma_{y},\;\sum F_{c}=ma_{c}=m\omega^{2}R$
+
+$\qquad${*}Masa: $\frac{m_{2}}{m_{1}}=\frac{a_{1}}{a_{2}}$(relación
+masa/aceleración)
+
+$\qquad${*}Peso: $\mathbf{P}=m\mathbf{g}$
+
+Fueza y momento:
+
+$\qquad${*}Resultante: $\mathbf{R}=\sum\mathbf{F}\neq0$
+
+$\qquad${*}Equilibrante: fz. $\mathbf{E}$ tal que $\mathbf{R}+\mathbf{E}=0$,
+$\theta_{R}=\arctan(\frac{R_{y}}{R_{x}})$
+
+$\qquad${*}Momento: $\mathbf{M}_{F}=\mathbf{F}\times\mathbf{d}$,
+$M_{F}=Fd\sin a$, y dado un punto $O$: $\mathbf{M}_{\mathbf{R}}^{O}=\sum_{i}\mathbf{\mathbf{M}_{F_{i}}^{\mathrm{\mathit{O}}}}$
+
+$\qquad${*}Varignon: Los pares resultantes debidos a varias fuerzas
+aplicado aproximadamente 
+
+$\qquad\quad$a un punto es igual a la suma de los pares contribuyentes:
+
+Fuerza elástica:
+
+$\qquad${*}$\mathbf{F}=\mathbf{F}_{e}\alpha\Delta x$
+
+$\qquad${*}Ley de Hooke: $F_{e}=-k\Delta x=k\left|x-\ell_{0}\right|$
+
+Fuezas de rozamiento:
+
+$\qquad${*}Rozamiento estático: $\begin{cases}
+F_{re}\leq\mu_{e}N & {\textstyle est\acute{a}tica}\\
+F_{re}^{max}=\mu_{e}N & {\textstyle transici\acute{o}n/movimiento}\\
+F_{rd}=\mu_{d}N & {\textstyle din\acute{a}mico}
+\end{cases}$
+
+$\qquad${*}Angulo estacionario máximo: $\theta^{max}=\arctan\mu_{e}$
+
+$\qquad${*}Rozamiento dinámico/cinético: $F_{ap}-F_{rd}=ma=0$, con 
+
+$\qquad\quad$$F_{rd}=\alpha N=\mu dN$ (coefic. rozamiento dinámico)
+y con $0<\mu_{d}<\mu_{e}<1$
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{\underline{Trabajo:} }
+
+{*}Producto fuerza-desplazamiento: $\begin{cases}
+F\Delta x=ma\Delta x=m\frac{v_{f}-v_{0}}{\Delta t}\frac{1}{2}(v_{f}-v_{0})\Delta t\\
+F\Delta x=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{0}^{2}
+\end{cases}$, $\mathrm{\left[J\right]=N\:m}$
+
+{*}Trabajo en una dimensión: 
+
+$\qquad${*}Fuerzas constantes (dado un despl. $\Delta\mathbf{r}$):$\begin{cases}
+\mathbf{\mathrm{W_{f}}=F\cdot}\Delta\mathbf{r}=F\Delta r\cos\theta\\
+mg\mathbf{\cdot h} & {\textstyle ca\acute{\imath}da}\\
+-\mu mg\cdot\mathbf{d} & {\textstyle rozamiento}
+\end{cases}$
+
+$\qquad${*}Fuerzas dinámicas:$\begin{cases}
+W_{f}=\sum\limits _{i}W_{F_{i}}=\sum\limits _{i}F_{i}\Delta x_{i}=\int_{x1}^{x2}F_{x}dx\\
+\frac{1}{2}k\Delta x^{2} & el\acute{a}stica
+\end{cases}$
+
+$\qquad${*}Fuerza conservativa: Aquella en la que el trabajo que
+realiza sobre un cuerpo depende
+
+sólo de $x_{0},x_{f}$ y no del camino seguido para llegar de uno
+a otro: $W_{f}=0$ si $x_{0}=x_{f}$
+
+{*}Energía cinética:
+
+$\qquad${*}Definición: $\Delta E_{c}=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{0}^{2}\;\rightarrow\;E_{c}=\frac{1}{2}mv^{2}$
+
+$\qquad${*}Teorema del trabajo-energía cinética: $\sum W_{\mathbf{F}}=\Delta E_{c}$
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{\underline{Potencia y energía potencial:}}
+
+{*}Definición de potencia: $P=\frac{dW}{dt}=\mathbf{F\cdot v}=Fv\cos\theta$,
+$\mathrm{\left[W\right]=\frac{J}{s}}$
+
+{*}Energía potencial ($U,$$\:$E$_{p}$):
+
+$\qquad${*}Definición para una fz. conservativa $\mathbf{F}_{c}$:
+$\begin{cases}
+\Delta U=U_{B}-U_{A}=-\int_{A}^{B}\mathbf{F}\cdot d\mathbf{s}\;\rightarrow\;dU=-\mathbf{F}\cdot d\mathbf{s}\\
+W_{\mathbf{F}_{c}}^{A\rightarrow B}=-\Delta U
+\end{cases}$
+
+$\qquad${*}Gravitatoria: $U=-\frac{GMm}{r}$
+
+$\qquad${*}Elástica (muelle): $U=\frac{1}{2}k\Delta x^{2}$
+
+$\qquad${*}Curva de $U$: $\min U(x)=0/F=0$ (equilibrio estable),
+$\max U(x)=0/F=0$ (equilibrio inestable)
+
+$\qquad\quad$Una fuerza conservativa siempre tiende a minimzar $U(x)$
+
+\pagebreak{}
+
+\textbf{\underline{Energía mecánica y principio de conservación:}}
+
+$\qquad${*}Energía mecánica: $E_{m}=E_{c_{sist}}+U_{sist}$ (energias
+cinetica y potencial de un sistema)
+
+$\qquad${*}Conservación de la energía mecánica: sin fuerzas ext.
+realizando trabajo sobre el sistema y 
+
+$\qquad\quad$aquellas internas conservativas, se da:
+
+$\qquad\quad$$E_{m}=E_{c_{sist}}+U_{sist}=cte$
+
+$\qquad\quad$$E_{c_{f}}+U_{f}=U_{c_{i}}+U_{i}$
+
+$\qquad${*}Energía total de un sistema: $E_{sist}=E_{m}+E_{term}+E_{quim}+E_{otras}$
+
+$\qquad${*}Conservación de la energía en un sistema: $E_{entrada}-E_{salida}=\Delta E_{sist}$
+
+$\qquad${*}Teorema trabajo-energía: $W_{ext}=\Delta E_{sist}=\Delta E_{m}+\Delta E_{term}+\Delta E_{quim}+\Delta E_{otras}$
+
+$\qquad${*}Masa y energía: Una particula de masa $m$ posee una energia
+en reposo $E_{0}$ dada por $E_{0}=mc^{2}$
+
+$\qquad\quad$Un sistema de masa $M$ aplica también: $E_{0}=Mc^{2}$,
+con $\Delta M=\frac{\Delta E}{c^{2}}$, con $c=3\times10^{8}\mathrm{\frac{m}{s}}$
+
+$\qquad${*}Ecuaciones de aceleración angular constante:
+
+\begin{align*}     
+	\omega &=\omega_{0} + \alpha t\\
+	\phi &=\phi_{0} + \omega_{0}t + \frac{1}{2} \alpha t^{2}\\
+	\omega^{2} &=\omega_{0}^{2} + 2 \alpha \left ( \omega - \omega_{0} \right )
+\end{align*}
+
+$\qquad${*}Balance de energía: $W_{\mathbf{F}_{c}+\mathbf{F}_{nc}}^{A\rightarrow B}=W_{\mathbf{F}_{c}}^{A\rightarrow B}+W_{\mathbf{F}_{nc}}^{A\rightarrow B}=\Delta E_{c}=E_{c_{B}}-E_{c_{A}}$
+
+$\qquad${*}Energía mecánica: $E_{m}=E_{c}+E_{p}$
+
+$\qquad${*}Principio de conservación de la energía: $W_{\mathbf{F}_{nc}}^{A\rightarrow B}=E_{m_{B}}-E_{m_{A}}$
+
+$\qquad\quad$en sist. conservativos: $\frac{1}{2}mv_{i}^{2}+E_{p_{i}}=\frac{1}{2}mv_{f}^{2}+E_{p_{f}}$
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{\underline{Impulso y cantidad de movimiento:}}
+
+{*}Definición de impulso: $\mathbf{I}=\mathbf{F}\Delta t$, ${\rm \left[N\:s\right]=\left[kg\:s\right]}$
+
+{*}Definición de cantidad de movimiento: $\mathbf{p}=m\mathbf{v}$,
+${\rm \left[N\:s\right]=\left[kg\:s\right]}$
+
+{*}Sistemas de partículas (centro, velocidad, aceleración):$\begin{cases}
+\mathbf{r}_{\text{cm}}=\frac{\sum_{i}m_{i}\mathbf{r}_{i}}{\sum_{i}m_{i}}=\frac{1}{M}\sum_{i}m_{i}\mathbf{r}_{i}\\
+\mathbf{v}_{\text{cm}}=\frac{\sum_{i}m_{i}\mathbf{v}_{i}}{\sum_{i}m_{i}}=\frac{1}{M}\sum_{i}m_{i}\mathbf{v}_{i}\\
+\mathbf{a}_{\text{cm}}=\frac{\sum_{i}m_{i}\mathbf{a}_{i}}{\sum_{i}m_{i}}=\frac{1}{M}\sum_{i}m_{i}\mathbf{a}_{i}
+\end{cases}$
+
+{*}Conservación de cantidad de movimiento: $\sum_{i=1}^{N}m_{i}\mathbf{v}_{i}=\text{constante}$;
+$\mathbf{I}=\Delta\mathbf{p}$
+
+{*}Choques (2 cuerpos): $\begin{cases}
+    \text{elásticos (ideales), e=1}\\
+    \text{plásticos (adherencia + deformación), e=0}
+\end{cases}$
+
+$\qquad${*}Ecuación de conservación: $m_{1}\mathbf{v}_{01}+m_{2}\mathbf{v}_{02}=m_{1}\mathbf{v}_{f1}+m_{2}\mathbf{v}_{f2}$
+
+$\qquad${*}Coeficiente de restitución: $e=-\frac{v_{2f}-v_{1f}}{v_{2i}-v_{1i}}$,
+con $0\leq e\leq1$
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{\underline{Gravitación:}}
+
+$\qquad${*}Unidad astronómica: $\mathrm{UA}=1.50\times10^{11}\mathrm{m}$
+
+$\qquad${*}Leyes de Kepler: 
+
+$\qquad\quad${*}Relación periodo-distancia: $T^{2}=Cr^{3}=\text{constante}$,
+según Newton: $C=\frac{4\pi^{2}}{G(M_{s}+M_{p})}r^{3}$
+
+$\qquad${*}Ley de gravitación universal: $F=-\frac{Gm_{1}m_{2}}{r_{1,2}^{2}}\mathbf{\hat{r}}_{1,2}$,
+con $G=6.67384(80)\times10^{-11}\ \mbox{N}\ \mbox{m}^{2}\ \mbox{kg}^{-2}$
+
+$\qquad${*}Energía mecánica (masa-partícula): $E_{m}=\frac{1}{2}mv^{2}-\frac{GMm}{r}$
+
+$\qquad\quad${*}Velocidad de escape: $v_{e}=\sqrt{\frac{2Gm_{1}m_{2}}{r}}$;
+para la Tierra
+
+$\qquad\quad$con $M_{t}=m_{1}\gg m_{2}$, $v_{e}=\sqrt{2gR_{t}}\approx11.2\frac{\mathrm{km}}{\mathrm{s}}$
+\end{document}
