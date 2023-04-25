@@ -1,0 +1,1849 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{babel}
+\usepackage{bigints}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 0.5in
+\rightmargin 0.5in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Mediciones - Errores:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Errores:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Error de medición en 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\begin_inset Formula $(\Delta X$
+\end_inset
+
+o 
+\begin_inset Formula $\sigma_{f})$
+\end_inset
+
+: 
+\begin_inset Formula $\begin{cases}
+\sqrt{\sigma_{est}^{2}+\sigma_{nom}^{2}}=\sqrt{\sigma_{est}^{2}+\sigma_{ap}^{2}+\sigma_{def}^{2}+\sigma_{int}^{2}+\sigma_{exact}^{2}}\\
+\sigma_{nom}^{2}≈\sigma_{ap}^{2}\;\Longrightarrow\;\sigma_{f}≈\sqrt{\sigma_{est}^{2}+\sigma_{ap}^{2}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Propagación de errores:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Error de fx.
+ de medición: 
+\begin_inset Formula $\sigma f=\sqrt{\left(\frac{\partial f}{\partial x}\right)^{2}\sigma_{x}^{2}+\left(\frac{\partial f}{\partial y}\right)^{2}\sigma_{y}^{2}+\left(\frac{\partial f}{\partial z}\right)^{2}\sigma_{z}^{2}+\cdots}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Cinemática en $
+\backslash
+rm I
+\backslash
+!R$:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Desplazamiento: 
+\begin_inset Formula $\Delta x=x_{2}-x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\qquad$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+displaystyle 
+\backslash
+mathbf{v}=
+\backslash
+lim
+\backslash
+limits_{
+\backslash
+Delta t 
+\backslash
+to 0}=
+\backslash
+displaystyle
+\backslash
+frac{
+\backslash
+Delta 
+\backslash
+mathbf{r}}{
+\backslash
+Delta t}=
+\backslash
+displaystyle
+\backslash
+frac{d
+\backslash
+mathbf{r}}{dt}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\qquad$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+displaystyle 
+\backslash
+mathbf{a}=
+\backslash
+lim
+\backslash
+limits_{
+\backslash
+Delta t 
+\backslash
+to 0}=
+\backslash
+displaystyle
+\backslash
+frac{
+\backslash
+Delta 
+\backslash
+mathbf{v}}{
+\backslash
+Delta t}=
+\backslash
+displaystyle
+\backslash
+frac{d
+\backslash
+mathbf{v}}{dt}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Velocidad:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Media: 
+\begin_inset Formula $\mathbf{v}_{m}=\frac{\Delta\mathbf{r}}{\Delta t}\,$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{v}=\frac{d\mathbf{r}}{dt}$
+\end_inset
+
+, 
+\begin_inset Formula $v=\frac{dr}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Instantánea: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$v(t)=
+\backslash
+lim
+\backslash
+limits_{
+\backslash
+Delta t 
+\backslash
+to 
+\backslash
+infty}
+\backslash
+frac{
+\backslash
+Delta x}{
+\backslash
+Delta t}=
+\backslash
+frac{dx}{dt}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Relativa: Dada una partícula de vel.
+ 
+\begin_inset Formula $v_{pA}$
+\end_inset
+
+ respecto de un sist.
+ de coor.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ moviéndose
+\end_layout
+
+\begin_layout Standard
+con velocidad 
+\begin_inset Formula $v_{AB}$
+\end_inset
+
+ respecto a otro sist.
+ de coor.
+ 
+\begin_inset Formula $B$
+\end_inset
+
+, la velocidad de la partícula relativa a 
+\begin_inset Formula $B$
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad\quad$
+\end_inset
+
+
+\begin_inset Formula $v_{pB}$
+\end_inset
+
+= 
+\begin_inset Formula $v_{pA}$
+\end_inset
+
++ 
+\begin_inset Formula $v_{AB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aceleración:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Media: 
+\begin_inset Formula $a_{m}=\frac{\Delta\mathbf{v}}{\Delta t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Instantánea: 
+\begin_inset Formula $a=\frac{d\mathbf{v}}{dt}=\frac{d^{2}x}{dt^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Gravitatoria: 
+\begin_inset Formula $g=9,81\mathrm{\frac{m}{s^{2}}≈10\mathrm{\frac{m}{s^{2}}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*MRU: 
+\begin_inset Formula $x=x_{0}+v\Delta t$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta t=\frac{\Delta v}{a}\quad\Longrightarrow\quad v^{2}=v_{0}^{2}+2a\Delta x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*MRUV: 
+\begin_inset Formula $\begin{cases}
+x(t)=x_{0}+v_{0}\Delta t+\frac{1}{2}a\Delta t^{2}\\
+v(t)=v_{0}+a\Delta t
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Cinemática en $
+\backslash
+rm I
+\backslash
+!R^{2}$ y $
+\backslash
+rm I
+\backslash
+!R^{3}$:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Velocidad relativa: Dada una partícula de vel.
+ 
+\begin_inset Formula $\mathbf{v}_{pA}$
+\end_inset
+
+ respecto de un sist.
+ de coor.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ moviéndose
+\end_layout
+
+\begin_layout Standard
+con velocidad 
+\begin_inset Formula $\mathbf{v}_{AB}$
+\end_inset
+
+ respecto a otro sist.
+ de coor.
+ 
+\begin_inset Formula $B$
+\end_inset
+
+, la velocidad de la partícula relativa a 
+\begin_inset Formula $B$
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad\quad$
+\end_inset
+
+
+\begin_inset Formula $\mathbf{v}_{pB}$
+\end_inset
+
+= 
+\begin_inset Formula $\mathbf{v}_{pA}$
+\end_inset
+
++ 
+\begin_inset Formula $\mathbf{v}_{AB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Movimientos de proyectiles:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Independencia de movimiento: 
+\begin_inset Formula $a_{x}=0,\;a_{y}=-g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Dependencia con el tiempo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+
+\begin_inset Formula $\Delta\mathbf{v}=\mathbf{g}t,\;\Delta r=v_{0}t+\frac{1}{2}gt^{2}$
+\end_inset
+
+, con 
+\begin_inset Formula $\mathbf{g}=-g\mathbf{\hat{j}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Alcance: 
+\begin_inset Formula $v_{x}\Delta t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caida libre/Tiro Vertical:
+\begin_inset Formula $\begin{cases}
+y(t)=y_{0}+v_{0}\Delta t\pm\frac{1}{2}g\Delta t^{2} & h_{max}=y(t)/y=0\\
+v(t)=v_{0}\pm g\Delta t & \Delta t=t/x(t)=0\\
+a(t)=\pm\Delta t & x_{max}=x(\Delta t)=\Delta x
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tiro Oblicuo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*MRU: 
+\begin_inset Formula $\begin{cases}
+x(t)=x_{0}+v_{0}\cos\theta\Delta t\\
+v_{x}(t)=v_{0}\cos\theta & \theta=\arctan\frac{v_{y}}{v_{x}}\\
+a_{x}(t)=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*MRUV: 
+\begin_inset Formula $\begin{cases}
+y(t)=y_{0}+v_{0}\sin\theta\Delta t-\frac{1}{2}g\Delta t^{2}\\
+v_{y}(t)=v_{0}\sin\theta-g\Delta t & v=\sqrt{v_{x}^{2}+v_{y}^{2}}\\
+a_{y}(t)=-g
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Rotación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*MCU:
+\begin_inset Formula $\begin{cases}
+\theta(t)=\theta_{0}+\omega(t-t_{0})+\frac{1}{2}\alpha(t-t_{0})^{2} & \Delta\theta=\frac{\omega_{f}-\omega_{i}}{2}t\\
+\omega=\frac{d\theta}{dt}=\frac{\Delta\theta}{\Delta t}=\omega_{0}+\alpha(t-t_{0})\\
+\alpha=\frac{\Delta\omega}{\Delta t}=\frac{d\omega}{dt}=\frac{d^{2}\theta}{dt}=\frac{\omega-\omega_{0}}{t-t_{0}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Velocidad tangencial: 
+\begin_inset Formula $v_{t}=\omega R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Aceleraciones tangencial y centrípeta: 
+\begin_inset Formula $a_{c}=\frac{v^{2}}{R}=\omega^{2}R$
+\end_inset
+
+, 
+\begin_inset Formula $a_{t}=\alpha R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Tensión de corte (cuerda): 
+\begin_inset Formula $\sum F_{c}=T=ma_{c}=m\omega^{2}R=m\frac{v^{2}}{r}$
+\end_inset
+
+, dada la tensión 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tau = 
+\backslash
+mathbf{r}_1
+\backslash
+times
+\backslash
+mathbf{F}_1 + 
+\backslash
+mathbf{r}_2
+\backslash
+times
+\backslash
+mathbf{F}_2 + 
+\backslash
+ldots + 
+\backslash
+mathbf{r}_N
+\backslash
+times
+\backslash
+mathbf{F}_N$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Leyes de Newton - Dinámica:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Primera ley (incercia): Un objeto en reposo permanece estático a menos
+ que actúe una fuerza 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+externa neta; Un objeto en movimiento continúa en velocidad constante a
+ menos que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+actúe una fuerza externa neta (sistema de tipo inercial)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Segunda ley (fundamental de dinámica): 
+\begin_inset Formula $\sum\mathbf{F}=m\mathbf{a}$
+\end_inset
+
+ (fuerza resultante)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Tercera ley (acción-reacción): 
+\begin_inset Formula $\mathbf{F}_{A,B}=\mathbf{-F}_{B,A}$
+\end_inset
+
+ (pares iguales y opuestos)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Fuerza - Momento:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fueza - definiciones:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Fuerza: 
+\begin_inset Formula $\mathbf{F}=m\mathbf{a}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{\left[N\right]=\frac{1kg}{1m/s^{2}}=\frac{kg\:m}{s^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Sumatorias: 
+\begin_inset Formula $\sum F_{x}=ma_{x},\;\sum F_{y}=ma_{y},\;\sum F_{c}=ma_{c}=m\omega^{2}R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Masa: 
+\begin_inset Formula $\frac{m_{2}}{m_{1}}=\frac{a_{1}}{a_{2}}$
+\end_inset
+
+(relación masa/aceleración)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Peso: 
+\begin_inset Formula $\mathbf{P}=m\mathbf{g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fueza y momento:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Resultante: 
+\begin_inset Formula $\mathbf{R}=\sum\mathbf{F}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Equilibrante: fz.
+ 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{R}+\mathbf{E}=0$
+\end_inset
+
+, 
+\begin_inset Formula $\theta_{R}=\arctan(\frac{R_{y}}{R_{x}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Momento: 
+\begin_inset Formula $\mathbf{M}_{F}=\mathbf{F}\times\mathbf{d}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{F}=Fd\sin a$
+\end_inset
+
+, y dado un punto 
+\begin_inset Formula $O$
+\end_inset
+
+: 
+\begin_inset Formula $\mathbf{M}_{\mathbf{R}}^{O}=\sum_{i}\mathbf{\mathbf{M}_{F_{i}}^{\mathrm{\mathit{O}}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Varignon: Los pares resultantes debidos a varias fuerzas aplicado aproximadamen
+te 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+a un punto es igual a la suma de los pares contribuyentes:
+\end_layout
+
+\begin_layout Standard
+Fuerza elástica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*
+\begin_inset Formula $\mathbf{F}=\mathbf{F}_{e}\alpha\Delta x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Ley de Hooke: 
+\begin_inset Formula $F_{e}=-k\Delta x=k\left|x-\ell_{0}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fuezas de rozamiento:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Rozamiento estático: 
+\begin_inset Formula $\begin{cases}
+F_{re}\leq\mu_{e}N & {\textstyle estática}\\
+F_{re}^{max}=\mu_{e}N & {\textstyle transición/movimiento}\\
+F_{rd}=\mu_{d}N & {\textstyle dinámico}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Angulo estacionario máximo: 
+\begin_inset Formula $\theta^{max}=\arctan\mu_{e}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Rozamiento dinámico/cinético: 
+\begin_inset Formula $F_{ap}-F_{rd}=ma=0$
+\end_inset
+
+, con 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+
+\begin_inset Formula $F_{rd}=\alpha N=\mu dN$
+\end_inset
+
+ (coefic.
+ rozamiento dinámico) y con 
+\begin_inset Formula $0<\mu_{d}<\mu_{e}<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Trabajo:} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Producto fuerza-desplazamiento: 
+\begin_inset Formula $\begin{cases}
+F\Delta x=ma\Delta x=m\frac{v_{f}-v_{0}}{\Delta t}\frac{1}{2}(v_{f}-v_{0})\Delta t\\
+F\Delta x=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{0}^{2}
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{\left[J\right]=N\:m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Trabajo en una dimensión: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Fuerzas constantes (dado un despl.
+ 
+\begin_inset Formula $\Delta\mathbf{r}$
+\end_inset
+
+):
+\begin_inset Formula $\begin{cases}
+\mathbf{\mathrm{W_{f}}=F\cdot}\Delta\mathbf{r}=F\Delta r\cos\theta\\
+mg\mathbf{\cdot h} & {\textstyle caída}\\
+-\mu mg\cdot\mathbf{d} & {\textstyle rozamiento}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Fuerzas dinámicas:
+\begin_inset Formula $\begin{cases}
+W_{f}=\sum\limits _{i}W_{F_{i}}=\sum\limits _{i}F_{i}\Delta x_{i}=\int_{x1}^{x2}F_{x}dx\\
+\frac{1}{2}k\Delta x^{2} & elástica
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Fuerza conservativa: Aquella en la que el trabajo que realiza sobre un
+ cuerpo depende
+\end_layout
+
+\begin_layout Standard
+sólo de 
+\begin_inset Formula $x_{0},x_{f}$
+\end_inset
+
+ y no del camino seguido para llegar de uno a otro: 
+\begin_inset Formula $W_{f}=0$
+\end_inset
+
+ si 
+\begin_inset Formula $x_{0}=x_{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Energía cinética:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Definición: 
+\begin_inset Formula $\Delta E_{c}=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{0}^{2}\;\rightarrow\;E_{c}=\frac{1}{2}mv^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Teorema del trabajo-energía cinética: 
+\begin_inset Formula $\sum W_{\mathbf{F}}=\Delta E_{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Potencia y energía potencial:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Definición de potencia: 
+\begin_inset Formula $P=\frac{dW}{dt}=\mathbf{F\cdot v}=Fv\cos\theta$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{\left[W\right]=\frac{J}{s}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Energía potencial (
+\begin_inset Formula $U,$
+\end_inset
+
+
+\begin_inset Formula $\:$
+\end_inset
+
+E
+\begin_inset Formula $_{p}$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Definición para una fz.
+ conservativa 
+\begin_inset Formula $\mathbf{F}_{c}$
+\end_inset
+
+: 
+\begin_inset Formula $\begin{cases}
+\Delta U=U_{B}-U_{A}=-\int_{A}^{B}\mathbf{F}\cdot d\mathbf{s}\;\rightarrow\;dU=-\mathbf{F}\cdot d\mathbf{s}\\
+W_{\mathbf{F}_{c}}^{A\rightarrow B}=-\Delta U
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Gravitatoria: 
+\begin_inset Formula $U=-\frac{GMm}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Elástica (muelle): 
+\begin_inset Formula $U=\frac{1}{2}k\Delta x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Curva de 
+\begin_inset Formula $U$
+\end_inset
+
+: 
+\begin_inset Formula $\min U(x)=0/F=0$
+\end_inset
+
+ (equilibrio estable), 
+\begin_inset Formula $\max U(x)=0/F=0$
+\end_inset
+
+ (equilibrio inestable)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+Una fuerza conservativa siempre tiende a minimzar 
+\begin_inset Formula $U(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Energía mecánica y principio de conservación:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Energía mecánica: 
+\begin_inset Formula $E_{m}=E_{c_{sist}}+U_{sist}$
+\end_inset
+
+ (energias cinetica y potencial de un sistema)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Conservación de la energía mecánica: sin fuerzas ext.
+ realizando trabajo sobre el sistema y 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+aquellas internas conservativas, se da:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+
+\begin_inset Formula $E_{m}=E_{c_{sist}}+U_{sist}=cte$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+
+\begin_inset Formula $E_{c_{f}}+U_{f}=U_{c_{i}}+U_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Energía total de un sistema: 
+\begin_inset Formula $E_{sist}=E_{m}+E_{term}+E_{quim}+E_{otras}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Conservación de la energía en un sistema: 
+\begin_inset Formula $E_{entrada}-E_{salida}=\Delta E_{sist}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Teorema trabajo-energía: 
+\begin_inset Formula $W_{ext}=\Delta E_{sist}=\Delta E_{m}+\Delta E_{term}+\Delta E_{quim}+\Delta E_{otras}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Masa y energía: Una particula de masa 
+\begin_inset Formula $m$
+\end_inset
+
+ posee una energia en reposo 
+\begin_inset Formula $E_{0}$
+\end_inset
+
+ dada por 
+\begin_inset Formula $E_{0}=mc^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+Un sistema de masa 
+\begin_inset Formula $M$
+\end_inset
+
+ aplica también: 
+\begin_inset Formula $E_{0}=Mc^{2}$
+\end_inset
+
+, con 
+\begin_inset Formula $\Delta M=\frac{\Delta E}{c^{2}}$
+\end_inset
+
+, con 
+\begin_inset Formula $c=3\times10^{8}\mathrm{\frac{m}{s}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Ecuaciones de aceleración angular constante:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*}     
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+omega &=
+\backslash
+omega_{0} + 
+\backslash
+alpha t
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+phi &=
+\backslash
+phi_{0} + 
+\backslash
+omega_{0}t + 
+\backslash
+frac{1}{2} 
+\backslash
+alpha t^{2}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+omega^{2} &=
+\backslash
+omega_{0}^{2} + 2 
+\backslash
+alpha 
+\backslash
+left ( 
+\backslash
+omega - 
+\backslash
+omega_{0} 
+\backslash
+right )
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Balance de energía: 
+\begin_inset Formula $W_{\mathbf{F}_{c}+\mathbf{F}_{nc}}^{A\rightarrow B}=W_{\mathbf{F}_{c}}^{A\rightarrow B}+W_{\mathbf{F}_{nc}}^{A\rightarrow B}=\Delta E_{c}=E_{c_{B}}-E_{c_{A}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Energía mecánica: 
+\begin_inset Formula $E_{m}=E_{c}+E_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Principio de conservación de la energía: 
+\begin_inset Formula $W_{\mathbf{F}_{nc}}^{A\rightarrow B}=E_{m_{B}}-E_{m_{A}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+en sist.
+ conservativos: 
+\begin_inset Formula $\frac{1}{2}mv_{i}^{2}+E_{p_{i}}=\frac{1}{2}mv_{f}^{2}+E_{p_{f}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Impulso y cantidad de movimiento:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Definición de impulso: 
+\begin_inset Formula $\mathbf{I}=\mathbf{F}\Delta t$
+\end_inset
+
+, 
+\begin_inset Formula ${\rm \left[N\:s\right]=\left[kg\:s\right]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Definición de cantidad de movimiento: 
+\begin_inset Formula $\mathbf{p}=m\mathbf{v}$
+\end_inset
+
+, 
+\begin_inset Formula ${\rm \left[N\:s\right]=\left[kg\:s\right]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Sistemas de partículas (centro, velocidad, aceleración):
+\begin_inset Formula $\begin{cases}
+\mathbf{r}_{\text{cm}}=\frac{\sum_{i}m_{i}\mathbf{r}_{i}}{\sum_{i}m_{i}}=\frac{1}{M}\sum_{i}m_{i}\mathbf{r}_{i}\\
+\mathbf{v}_{\text{cm}}=\frac{\sum_{i}m_{i}\mathbf{v}_{i}}{\sum_{i}m_{i}}=\frac{1}{M}\sum_{i}m_{i}\mathbf{v}_{i}\\
+\mathbf{a}_{\text{cm}}=\frac{\sum_{i}m_{i}\mathbf{a}_{i}}{\sum_{i}m_{i}}=\frac{1}{M}\sum_{i}m_{i}\mathbf{a}_{i}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Conservación de cantidad de movimiento: 
+\begin_inset Formula $\sum_{i=1}^{N}m_{i}\mathbf{v}_{i}=\text{constante}$
+\end_inset
+
+; 
+\begin_inset Formula $\mathbf{I}=\Delta\mathbf{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Choques (2 cuerpos): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+begin{cases}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+text{elásticos (ideales), e=1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+text{plásticos (adherencia + deformación), e=0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{cases}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Ecuación de conservación: 
+\begin_inset Formula $m_{1}\mathbf{v}_{01}+m_{2}\mathbf{v}_{02}=m_{1}\mathbf{v}_{f1}+m_{2}\mathbf{v}_{f2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Coeficiente de restitución: 
+\begin_inset Formula $e=-\frac{v_{2f}-v_{1f}}{v_{2i}-v_{1i}}$
+\end_inset
+
+, con 
+\begin_inset Formula $0\leq e\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Gravitación:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Unidad astronómica: 
+\begin_inset Formula $\mathrm{UA}=1.50\times10^{11}\mathrm{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Leyes de Kepler: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+*Relación periodo-distancia: 
+\begin_inset Formula $T^{2}=Cr^{3}=\text{constante}$
+\end_inset
+
+, según Newton: 
+\begin_inset Formula $C=\frac{4\pi^{2}}{G(M_{s}+M_{p})}r^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Ley de gravitación universal: 
+\begin_inset Formula $F=-\frac{Gm_{1}m_{2}}{r_{1,2}^{2}}\mathbf{\hat{r}}_{1,2}$
+\end_inset
+
+, con 
+\begin_inset Formula $G=6.67384(80)\times10^{-11}\ \mbox{N}\ \mbox{m}^{2}\ \mbox{kg}^{-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*Energía mecánica (masa-partícula): 
+\begin_inset Formula $E_{m}=\frac{1}{2}mv^{2}-\frac{GMm}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+*Velocidad de escape: 
+\begin_inset Formula $v_{e}=\sqrt{\frac{2Gm_{1}m_{2}}{r}}$
+\end_inset
+
+; para la Tierra
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\quad$
+\end_inset
+
+con 
+\begin_inset Formula $M_{t}=m_{1}\gg m_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $v_{e}=\sqrt{2gR_{t}}≈11.2\frac{\mathrm{km}}{\mathrm{s}}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
