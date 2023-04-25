@@ -1,0 +1,528 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Constantes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*
+\begin_inset Formula $k=8,99\times10^{9}\mathrm{\frac{Nm^{2}}{C^{2}}}$
+\end_inset
+
+ (cte.
+ de Coulomb)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*
+\begin_inset Formula $\epsilon_{0}=$
+\end_inset
+
+
+\begin_inset Formula $\frac{1}{4\pi k}=8,85\times10^{-12}\mathrm{\frac{C^{2}}{Nm^{2}}}$
+\end_inset
+
+ (permitividad del vacio)
+\end_layout
+
+\begin_layout Standard
+Unidades
+\end_layout
+
+\begin_layout Standard
+Ley de Coulomb: 
+\begin_inset Formula $\overrightarrow{F}_{12}=\frac{kq_{1}q_{2}}{r_{12}^{2}}\hat{r}_{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rel.
+ entre fz electrica y gravitatoria: 
+\begin_inset Formula $\frac{F_{e}}{F_{g}}=\frac{ke^{2}}{Gm_{p}m_{e}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Campo electrico:
+\begin_inset Formula $\overrightarrow{E}=\frac{\overrightarrow{F}}{q_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dipolos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* momento: 
+\begin_inset Formula $\overrightarrow{P}=q\overrightarrow{L}$
+\end_inset
+
+, * momento sobre un dipolo: 
+\begin_inset Formula $\overrightarrow{\tau}=\overrightarrow{p}\times\overrightarrow{E}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Campo para una DDC continua: 
+\begin_inset Formula $\overrightarrow{E}=\int d\overrightarrow{E}=\int\frac{k\mathbf{\hat{r}}}{r^{2}}dq$
+\end_inset
+
+ (ley de Coulomb), con 
+\begin_inset Formula $dq=\rho dV,\sigma dA,\lambda dL$
+\end_inset
+
+ (segun geometria)
+\end_layout
+
+\begin_layout Standard
+Ley de Gauss: 
+\begin_inset Formula $\phi_{neto}=\varoint_{S}\overrightarrow{E}\cdot\hat{\mathbf{n}}\cdot dA=\varoint_{S}E_{n}dA=\frac{Q_{interior}}{\epsilon_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Campos electricos en DDC:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* carga lineal infinita: 
+\begin_inset Formula $Er=\textrm{sign}(z)\cdot\frac{\sigma}{2\epsilon_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* esfera solida cargada: 
+\begin_inset Formula $Er=\frac{1}{4\pi\epsilon_{0}}\frac{Q}{r^{2}}$
+\end_inset
+
+ con 
+\begin_inset Formula $r>R$
+\end_inset
+
+, 
+\begin_inset Formula $Er=0$
+\end_inset
+
+ con 
+\begin_inset Formula $r<R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diferencia de potencial: 
+\begin_inset Formula $\Delta V=V_{b}-V_{a}=\frac{\triangle U}{q_{0}}=-\int_{a}^{b}\overrightarrow{E}\cdot d\overrightarrow{\ell}$
+\end_inset
+
+, con el diferencial de potencial 
+\begin_inset Formula $dV=-\overrightarrow{E}\cdot d\overrightarrow{\text{\ensuremath{\ell}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Potencial de coulomb: 
+\begin_inset Formula $V=\frac{kq}{r}$
+\end_inset
+
+, para una carga puntual: 
+\begin_inset Formula $V=\frac{kq}{r}-\frac{kq}{r_{ref}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Potencial debido a DDC: 
+\begin_inset Formula $V=\int\frac{kdq}{r}$
+\end_inset
+
+ (en volumenes finitos)
+\end_layout
+
+\begin_layout Standard
+Campo a partir del potencial y componentes: 
+\begin_inset Formula $E_{tan}=-\frac{dV}{d\ell}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Relacion general entre 
+\begin_inset Formula $\overrightarrow{E}$
+\end_inset
+
+ y 
+\begin_inset Formula $V$
+\end_inset
+
+: 
+\begin_inset Formula $\overrightarrow{E}=-\overrightarrow{\nabla}V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+EP de 2 cargas puntuales: 
+\begin_inset Formula $U=q_{0}V=\frac{kq_{0}q}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Funciones potenciales:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* eje de un anillo uniformemente cargado: 
+\begin_inset Formula $V=\frac{kQ}{\sqrt{z^{2}+a^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* eje de un disco uniformemente cargado: 
+\begin_inset Formula $V=2\pi k\sigma\left|z\right|\left(\sqrt{1+\frac{R^{2}}{z^{2}}}-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* plano infinito cargado: 
+\begin_inset Formula $V=V_{0}-2\pi k\sigma\left|z\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* corteza esferica de carga: 
+\begin_inset Formula $V=\begin{cases}
+\frac{kQ}{r} & r\geq R\\
+\frac{kQ}{R} & r\leq R
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* linea infinita de carga: 
+\begin_inset Formula $V=2k\lambda\ln\frac{R_{ref}}{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+EP electrostatica:
+\end_layout
+
+\begin_layout Standard
+* cond.
+ de carga 
+\begin_inset Formula $Q$
+\end_inset
+
+ y poot.
+ 
+\begin_inset Formula $V$
+\end_inset
+
+: 
+\begin_inset Formula $U=\frac{1}{2}QV$
+\end_inset
+
+ 
+\begin_inset Formula $\quad$
+\end_inset
+
+* sistema de cond.: 
+\begin_inset Formula $U=\frac{1}{2}\underset{i}{\sum}Q_{i}V_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Capacidad: 
+\begin_inset Formula $C=\frac{Q}{V}$
+\end_inset
+
+, y en geometrias:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*cond.
+ esferico aislado: 
+\begin_inset Formula $C=4\pi\epsilon_{0}R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*placas paralelas: 
+\begin_inset Formula $C=\frac{\epsilon_{0}A}{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+*cond.
+ cilindrico: 
+\begin_inset Formula $C=\frac{2\pi\epsilon_{0}L}{\ln\frac{R_{2}}{R_{1}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Energia almacenada en un condensador: 
+\begin_inset Formula $U=\frac{1}{2}QV=\frac{1}{2}\frac{Q^{2}}{C}=\frac{1}{2}CV^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Densidad energetica debida a un campo electrico: 
+\begin_inset Formula $u_{e}=\frac{1}{2}\epsilon_{0}E^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intensidad: 
+\begin_inset Formula $I=\frac{\triangle Q}{\triangle t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Densidad de corriente: 
+\begin_inset Formula $\overrightarrow{J}=qn\overrightarrow{v_{d}}$
+\end_inset
+
+, donde 
+\begin_inset Formula $n$
+\end_inset
+
+ es la densidad numerica de electrones
+\end_layout
+
+\begin_layout Standard
+Resistencia: 
+\begin_inset Formula $R=\frac{V}{I}=\rho\frac{L}{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ley de Ohm: 
+\begin_inset Formula $V=IR$
+\end_inset
+
+, 
+\begin_inset Formula $R$
+\end_inset
+
+ constante
+\end_layout
+
+\begin_layout Standard
+Descarga de condensador:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* fx de carga: 
+\begin_inset Formula $Q(t)=Q_{0}e^{-\frac{t}{RC}}=Q_{0}e^{-\frac{t}{\tau}}$
+\end_inset
+
+, con 
+\begin_inset Formula $\tau=RC$
+\end_inset
+
+ 
+\begin_inset Formula $\qquad$
+\end_inset
+
+* corriente en el circuito: 
+\begin_inset Formula $I=\frac{dQ}{dt}=\frac{V_{0}}{R}e^{-\frac{t}{RC}}=I_{0}e^{-\frac{t}{\tau}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Carga de un condensador:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+* fx de carga: 
+\begin_inset Formula $Q=C\mathscr{E\left[\mathit{\mathrm{1}-\mathrm{\mathit{e^{-\frac{t}{RC}}}}}\right]=\mathit{Q_{0}\left(\mathrm{1}-e^{-\frac{t}{\tau}}\right)}}$
+\end_inset
+
+ 
+\begin_inset Formula $\qquad$
+\end_inset
+
+* corriente en el circuito: 
+\begin_inset Formula $I=\frac{\mathscr{E}}{R}e^{-\frac{t}{RC}}=I_{0}e^{-\frac{t}{\tau}}$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
