@@ -1,0 +1,123 @@
+%% LyX 2.3.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{luainputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=0.5in,bmargin=0.5in,lmargin=0.5in,rmargin=0.5in}
+\usepackage{amsmath}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{babel}
+\usepackage{bigints}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\textbf{\underline{Unidades:}}
+
+$\Delta X$o $\sigma_{f}$: $\sqrt{\sigma_{est}^{2}+\sigma_{nom}^{2}}=\sqrt{\sigma_{est}^{2}+\sigma_{ap}^{2}+\sigma_{def}^{2}+\sigma_{int}^{2}+\sigma_{exact}^{2}}$ 
+
+$\sigma f=\sqrt{\left(\frac{\partial f}{\partial x}\right)^{2}\sigma_{x}^{2}+\left(\frac{\partial f}{\partial y}\right)^{2}\sigma_{y}^{2}+\cdots}$
+
+\textbf{\underline{Cinemática en $\rm I\!R$:}}
+
+{*}MRU: $x=x_{0}+v\Delta t$, con $v=\frac{\Delta x}{\Delta t}$
+
+{*}MRUV: $x(t)=x_{0}+v_{0}\Delta t+\frac{1}{2}a\Delta t^{2}$, $\quad$$v(t)=v_{0}+a\Delta t$
+
+\textbf{\underline{Cinemática en $\rm I\!R^{2}$ y $\rm I\!R^{3}$:}}
+
+{*}CL/TV:$y(t)=y_{0}+v_{0}\Delta t\pm\frac{1}{2}g\Delta t^{2}$, $\quad$$v(t)=v_{0}\pm g\Delta t$
+
+{*}TO:$\begin{cases}
+x(t)=x_{0}+v_{0}\cos\theta\Delta t\\
+y(t)=y_{0}+v_{0}\sin\theta\Delta t+\frac{1}{2}a\Delta t^{2}\\
+v_{y}(t)=v_{0}\sin\theta-g\Delta t
+\end{cases}$
+
+{*}MCU:$\begin{cases}
+\theta(t)=\theta_{0}+\omega(t-t_{0})+\frac{1}{2}\alpha(t-t_{0})^{2}\\
+\omega=\frac{d\theta}{dt}=\frac{\Delta\theta}{\Delta t}=\omega_{0}+\alpha(t-t_{0})\\
+v_{t}=\omega R,a_{c}=\frac{v^{2}}{R}=\omega^{2}R,a_{t}=\alpha R
+\end{cases}$
+
+\textbf{\underline{Fuerza:}}
+
+{*}Fuerza, masa, peso: $\mathbf{F}=m\mathbf{a}$,$\,$ $\frac{m_{2}}{m_{1}}=\frac{a_{1}}{a_{2}}$,
+$\mathbf{P}=m\mathbf{g}$
+
+{*}Momento: $\mathbf{M}_{F}=\mathbf{F}\times\mathbf{d}$, $M_{F}=Fd\sin a$,
+y dado un punto $O$: $\mathbf{M}_{\mathbf{R}}^{O}=\sum_{i}\mathbf{\mathbf{M}_{F_{i}}^{\mathrm{\mathit{O}}}}$
+
+{*}Fuerza elástica:$\mathbf{F}=\mathbf{F}_{e}\alpha\Delta x$, con
+$F_{e}=-k\Delta x=k\left|x-\ell_{0}\right|$
+
+\textbf{\underline{Trabajo:} }
+
+{*}Producto fuerza-desplazamiento: $\begin{cases}
+F\Delta x=ma\Delta x=m\frac{v_{f}-v_{0}}{\Delta t}\frac{1}{2}(v_{f}-v_{0})\Delta t\\
+F\Delta x=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{0}^{2}
+\end{cases}$
+
+{*}Trabajo: fz. ctes.:$\begin{cases}
+\mathbf{\mathrm{W_{f}}=F\cdot}\Delta\mathbf{r}=F\Delta r\cos\theta\\
+mg\mathbf{\cdot h} & {\textstyle ca\acute{\imath}da}\\
+-\mu mg\cdot\mathbf{d} & {\textstyle rozamiento}
+\end{cases}$
+
+{*}Trabajo: fz. dinámicas:$\begin{cases}
+W_{f}=\sum\limits _{i}W_{F_{i}}=\sum\limits _{i}F_{i}\Delta x_{i}=\int_{x1}^{x2}F_{x}dx\\
+\frac{1}{2}k\Delta x^{2} & el\acute{a}stica
+\end{cases}$
+
+{*}Energía cinética: $\Delta E_{c}=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{0}^{2}\;\rightarrow\;E_{c}=\frac{1}{2}mv^{2}$
+
+\textbf{\underline{Potencia y energía potencial:}}
+
+{*}Potencia: $P=\frac{dW}{dt}=\mathbf{F\cdot v}=Fv\cos\theta$
+
+{*}Energía potencial ($U,$$\:$E$_{p}$):
+
+$\qquad${*}En fz. conservativa $\mathbf{F}_{c}$: $\begin{cases}
+\Delta U=U_{B}-U_{A}=-\int_{A}^{B}\mathbf{F}\cdot d\mathbf{s}\;\rightarrow\;dU=-\mathbf{F}\cdot d\mathbf{s}\\
+W_{\mathbf{F}_{c}}^{A\rightarrow B}=-\Delta U
+\end{cases}$
+
+$\qquad${*}Gravitatoria: $U=-\frac{GMm}{r}$
+
+$\qquad${*}Elástica (muelle): $U=\frac{1}{2}k\Delta x^{2}$
+
+\textbf{\underline{Energía mecánica y principio de conservación:}}
+
+$\qquad${*}Energía mecánica: $E_{m}=E_{c_{sist}}+U_{sist}$
+
+$\qquad${*}Teorema trabajo-energía: $W_{ext}=\Delta E_{sist}=\Delta E_{m}+\Delta E_{term}+\Delta E_{quim}+\Delta E_{otras}$
+
+$\qquad${*}Principio de conservación de la energía: $W_{\mathbf{F}_{nc}}^{A\rightarrow B}=E_{m_{B}}-E_{m_{A}}$,$\,$$\frac{1}{2}mv_{i}^{2}+E_{p_{i}}=\frac{1}{2}mv_{f}^{2}+E_{p_{f}}$
+
+\textbf{\underline{Impulso y cantidad de movimiento:}}
+
+{*}Impulso, cant. de movimiento: $\mathbf{I}=\mathbf{F}\Delta t$,$\:\mathbf{p}=m\mathbf{v}$
+
+{*}Choques:
+
+$\qquad$Ecuación de conservación: $m_{1}\mathbf{v}_{01}+m_{2}\mathbf{v}_{02}=m_{1}\mathbf{v}_{f1}+m_{2}\mathbf{v}_{f2}$
+
+$\qquad$Coeficiente de restitución: $e=-\frac{v_{2f}-v_{1f}}{v_{2i}-v_{1i}}$,
+con $0\leq e\leq1$
+
+\textbf{\underline{Gravitación:}}
+
+{*}Unidad astronómica, cte. gravitación: $\mathrm{UA}=1.50\times10^{11}\mathrm{m}$,
+$\mathrm{G}=6.67384(80)\times10^{-11}\ \mbox{N}\ \mbox{m}^{2}\ \mbox{kg}^{-2}$
+
+{*}Ley de gravitación universal: $F=-\frac{Gm_{1}m_{2}}{r_{1,2}^{2}}\mathbf{\hat{r}}_{1,2}$
+
+{*}Velocidad de escape: $v_{e}=\sqrt{\frac{2Gm_{1}m_{2}}{r}}$; en
+la Tierra $v_{e}=\sqrt{2gR_{t}}\approx11.2\frac{\mathrm{km}}{\mathrm{s}}$
+\end{document}

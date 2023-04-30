@@ -97,6 +97,56 @@ status open
 
 
 \backslash
+underline{Unidades:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Fuerza: 
+\begin_inset Formula $\left[N\right]=\frac{1\mathrm{kg}}{1\mathrm{m}/\mathrm{s}^{2}}=\frac{\mathrm{kg\:m}}{\mathrm{s}^{2}}$
+\end_inset
+
+ Potencia: 
+\begin_inset Formula $\mathrm{\left[W\right]=\frac{J}{s}}$
+\end_inset
+
+ Trabajo: 
+\begin_inset Formula $\mathrm{\left[J\right]=N\:m}$
+\end_inset
+
+, 
+\begin_inset Formula $g=9,81\mathrm{\frac{m}{s^{2}}≈10\mathrm{\frac{m}{s^{2}}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
 underline{Mediciones - Errores:}
 \end_layout
 
@@ -331,7 +381,7 @@ y
 \end_inset
 
 
-\begin_inset Formula $\:C_{y}=A_{y}+B_{y}$
+\begin_inset Formula $C_{y}=A_{y}+B_{y}$
 \end_inset
 
 
@@ -681,23 +731,16 @@ Aceleración:
 \begin_inset Formula $\qquad$
 \end_inset
 
-*Gravitatoria: 
-\begin_inset Formula $g=9,81\mathrm{\frac{m}{s^{2}}≈10\mathrm{\frac{m}{s^{2}}}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\qquad$
-\end_inset
-
 *MRU: 
-\begin_inset Formula $x=x_{0}+v\Delta t$
+\begin_inset Formula $x(t)=x_{0}+v_{0}\Delta t+\frac{1}{2}a\Delta t^{2}$
 \end_inset
 
 , 
-\begin_inset Formula $\Delta t=\frac{\Delta v}{a}\quad\Longrightarrow\quad v^{2}=v_{0}^{2}+2a\Delta x$
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\begin_inset Formula $v(t)=v_{0}+a\Delta t$
 \end_inset
 
 
@@ -710,7 +753,7 @@ Aceleración:
 *MRUV: 
 \begin_inset Formula $\begin{cases}
 x(t)=x_{0}+v_{0}\Delta t+\frac{1}{2}a\Delta t^{2}\\
-v(t)=v_{0}+a\Delta t
+v(t)=v_{0}+a\Delta t & \Delta v^{2}=2a\Delta x
 \end{cases}$
 \end_inset
 
@@ -1076,7 +1119,7 @@ Movimientos de proyectiles:
 Caida libre/Tiro Vertical:
 \begin_inset Formula $\begin{cases}
 y(t)=y_{0}+v_{0}\Delta t\pm\frac{1}{2}g\Delta t^{2} & h_{max}=y(t)/y=0\\
-v(t)=v_{0}\pm g\Delta t & \Delta t=t/x(t)=0\\
+v(t)=v_{0}\pm g\Delta t & v^{2}=2g\Delta y\\
 a(t)=\pm\Delta t & x_{max}=x(\Delta t)=\Delta x
 \end{cases}$
 \end_inset
@@ -1085,33 +1128,18 @@ a(t)=\pm\Delta t & x_{max}=x(\Delta t)=\Delta x
 \end_layout
 
 \begin_layout Standard
-Tiro Oblicuo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\qquad$
-\end_inset
-
-*MRU: 
+TO: 
 \begin_inset Formula $\begin{cases}
+\mathrm{MRU_{(x)}}:\begin{cases}
 x(t)=x_{0}+v_{0}\cos\theta\Delta t\\
 v_{x}(t)=v_{0}\cos\theta & \theta=\arctan\frac{v_{y}}{v_{x}}\\
 a_{x}(t)=0
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\qquad$
-\end_inset
-
-*MRUV: 
-\begin_inset Formula $\begin{cases}
-y(t)=y_{0}+v_{0}\sin\theta\Delta t-\frac{1}{2}g\Delta t^{2}\\
-v_{y}(t)=v_{0}\sin\theta-g\Delta t & v=\sqrt{v_{x}^{2}+v_{y}^{2}}\\
-a_{y}(t)=-g
+\end{cases}\\
+\mathrm{MRUV_{(y)}}:\begin{cases}
+y(t)=y_{0}+v_{0}\sin\theta\Delta t\pm\frac{1}{2}g\Delta t^{2}\\
+v_{y}(t)=v_{0}\sin\theta\pm g\Delta t & v=\sqrt{v_{x}^{2}+v_{y}^{2}}\\
+a_{y}(t)=\pm g
+\end{cases}
 \end{cases}$
 \end_inset
 
@@ -1129,7 +1157,7 @@ a_{y}(t)=-g
 *MCU:
 \begin_inset Formula $\begin{cases}
 \theta(t)=\theta_{0}+\omega(t-t_{0})+\frac{1}{2}\alpha(t-t_{0})^{2} & \Delta\theta=\frac{\omega_{f}-\omega_{i}}{2}t\\
-\omega=\frac{d\theta}{dt}=\frac{\Delta\theta}{\Delta t}=\omega_{0}+\alpha(t-t_{0})\\
+\omega=\frac{d\theta}{dt}=\frac{\Delta\theta}{\Delta t}=\omega_{0}+\alpha(t-t_{0}) & \omega=\frac{2\pi}{T}=2\pi f\\
 \alpha=\frac{\Delta\omega}{\Delta t}=\frac{d\omega}{dt}=\frac{d^{2}\theta}{dt}=\frac{\omega-\omega_{0}}{t-t_{0}}
 \end{cases}$
 \end_inset
@@ -1328,10 +1356,6 @@ Fueza - definiciones:
 \begin_inset Formula $\mathbf{F}=m\mathbf{a}$
 \end_inset
 
-, 
-\begin_inset Formula $\mathrm{\left[N\right]=\frac{1kg}{1m/s^{2}}=\frac{kg\:m}{s^{2}}}$
-\end_inset
-
 
 \end_layout
 
@@ -1430,15 +1454,15 @@ Fueza y momento:
 \begin_inset Formula $\qquad$
 \end_inset
 
-*Varignon: Los pares resultantes debidos a varias fuerzas aplicado aproximadamen
-te 
+*Varignon: Los pares resultantes debidos a varias fuerzas aplicadas aproximadame
+nte 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\qquad\quad$
 \end_inset
 
-a un punto es igual a la suma de los pares contribuyentes:
+en un punto es igual a la suma de los pares contribuyentes:
 \end_layout
 
 \begin_layout Standard
@@ -1560,10 +1584,6 @@ underline{Trabajo:}
 F\Delta x=ma\Delta x=m\frac{v_{f}-v_{0}}{\Delta t}\frac{1}{2}(v_{f}-v_{0})\Delta t\\
 F\Delta x=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{0}^{2}
 \end{cases}$
-\end_inset
-
-, 
-\begin_inset Formula $\mathrm{\left[J\right]=N\:m}$
 \end_inset
 
 
@@ -1690,10 +1710,6 @@ underline{Potencia y energía potencial:}
 \begin_layout Standard
 *Definición de potencia: 
 \begin_inset Formula $P=\frac{dW}{dt}=\mathbf{F\cdot v}=Fv\cos\theta$
-\end_inset
-
-, 
-\begin_inset Formula $\mathrm{\left[W\right]=\frac{J}{s}}$
 \end_inset
 
 
@@ -1863,17 +1879,6 @@ aquellas internas conservativas, se da:
 \begin_inset Formula $\qquad$
 \end_inset
 
-*Energía total de un sistema: 
-\begin_inset Formula $E_{sist}=E_{m}+E_{term}+E_{quim}+E_{otras}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\qquad$
-\end_inset
-
 *Conservación de la energía en un sistema: 
 \begin_inset Formula $E_{entrada}-E_{salida}=\Delta E_{sist}$
 \end_inset
@@ -2023,17 +2028,6 @@ end{align*}
 
 *Balance de energía: 
 \begin_inset Formula $W_{\mathbf{F}_{c}+\mathbf{F}_{nc}}^{A\rightarrow B}=W_{\mathbf{F}_{c}}^{A\rightarrow B}+W_{\mathbf{F}_{nc}}^{A\rightarrow B}=\Delta E_{c}=E_{c_{B}}-E_{c_{A}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\qquad$
-\end_inset
-
-*Energía mecánica: 
-\begin_inset Formula $E_{m}=E_{c}+E_{p}$
 \end_inset
 
 

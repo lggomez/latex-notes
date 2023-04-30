@@ -18,6 +18,14 @@
 
 \usepackage{babel}
 \begin{document}
+\textbf{\underline{Unidades:}}
+
+{*}Fuerza: $\left[N\right]=\frac{1\mathrm{kg}}{1\mathrm{m}/\mathrm{s}^{2}}=\frac{\mathrm{kg\:m}}{\mathrm{s}^{2}}$
+Potencia: $\mathrm{\left[W\right]=\frac{J}{s}}$ Trabajo: $\mathrm{\left[J\right]=N\:m}$,
+$g=9,81\mathrm{\frac{m}{s^{2}}\approx10\mathrm{\frac{m}{s^{2}}}}$
+
+\rule[0.5ex]{1\columnwidth}{1pt}
+
 \textbf{\underline{Mediciones - Errores:}}
 
 Errores:
@@ -57,7 +65,7 @@ con $\Delta_{0}=$$\frac{1}{n-2}\sum_{i}\left(y_{i}+ax_{i}-b\right)^{2}$
 
 $\qquad${*}Componentes y módulo: $A_{x}=A\cos\theta$,$\:$$A_{y}=A\sin\theta$,$\:$$A=\sqrt{A_{x}^{2}+A_{y}^{2}}$
 
-$\qquad${*}Suma: si $\mathbf{C=A+B}$ entonces $C_{x}=A_{x}+B_{x}$$\:$y$\:$$\:C_{y}=A_{y}+B_{y}$
+$\qquad${*}Suma: si $\mathbf{C=A+B}$ entonces $C_{x}=A_{x}+B_{x}$$\:$y$\:$$C_{y}=A_{y}+B_{y}$
 
 $\qquad${*}Unitarios (versores): $\mathbf{A}$ puede escribirse en
 función de los vectores unitarios $\mathbf{\hat{i},\hat{k},\hat{j}}$, 
@@ -103,13 +111,12 @@ $\qquad${*}Media: $a_{m}=\frac{\Delta\mathbf{v}}{\Delta t}$
 
 $\qquad${*}Instantánea: $a=\frac{d\mathbf{v}}{dt}=\frac{d^{2}x}{dt^{2}}$
 
-$\qquad${*}Gravitatoria: $g=9,81\mathrm{\frac{m}{s^{2}}\approx10\mathrm{\frac{m}{s^{2}}}}$
-
-$\qquad${*}MRU: $x=x_{0}+v\Delta t$, $\Delta t=\frac{\Delta v}{a}\quad\Longrightarrow\quad v^{2}=v_{0}^{2}+2a\Delta x$
+$\qquad${*}MRU: $x(t)=x_{0}+v_{0}\Delta t+\frac{1}{2}a\Delta t^{2}$,
+$\quad$$v(t)=v_{0}+a\Delta t$
 
 $\qquad${*}MRUV: $\begin{cases}
 x(t)=x_{0}+v_{0}\Delta t+\frac{1}{2}a\Delta t^{2}\\
-v(t)=v_{0}+a\Delta t
+v(t)=v_{0}+a\Delta t & \Delta v^{2}=2a\Delta x
 \end{cases}$
 
 \textbf{\pagebreak}
@@ -153,29 +160,28 @@ $\qquad${*}Alcance: $v_{x}\Delta t$
 
 Caida libre/Tiro Vertical:$\begin{cases}
 y(t)=y_{0}+v_{0}\Delta t\pm\frac{1}{2}g\Delta t^{2} & h_{max}=y(t)/y=0\\
-v(t)=v_{0}\pm g\Delta t & \Delta t=t/x(t)=0\\
+v(t)=v_{0}\pm g\Delta t & v^{2}=2g\Delta y\\
 a(t)=\pm\Delta t & x_{max}=x(\Delta t)=\Delta x
 \end{cases}$
 
-Tiro Oblicuo:
-
-$\qquad${*}MRU: $\begin{cases}
+TO: $\begin{cases}
+\mathrm{MRU_{(x)}}:\begin{cases}
 x(t)=x_{0}+v_{0}\cos\theta\Delta t\\
 v_{x}(t)=v_{0}\cos\theta & \theta=\arctan\frac{v_{y}}{v_{x}}\\
 a_{x}(t)=0
-\end{cases}$
-
-$\qquad${*}MRUV: $\begin{cases}
-y(t)=y_{0}+v_{0}\sin\theta\Delta t-\frac{1}{2}g\Delta t^{2}\\
-v_{y}(t)=v_{0}\sin\theta-g\Delta t & v=\sqrt{v_{x}^{2}+v_{y}^{2}}\\
-a_{y}(t)=-g
+\end{cases}\\
+\mathrm{MRUV_{(y)}}:\begin{cases}
+y(t)=y_{0}+v_{0}\sin\theta\Delta t\pm\frac{1}{2}g\Delta t^{2}\\
+v_{y}(t)=v_{0}\sin\theta\pm g\Delta t & v=\sqrt{v_{x}^{2}+v_{y}^{2}}\\
+a_{y}(t)=\pm g
+\end{cases}
 \end{cases}$
 
 {*}Rotación:
 
 $\qquad${*}MCU:$\begin{cases}
 \theta(t)=\theta_{0}+\omega(t-t_{0})+\frac{1}{2}\alpha(t-t_{0})^{2} & \Delta\theta=\frac{\omega_{f}-\omega_{i}}{2}t\\
-\omega=\frac{d\theta}{dt}=\frac{\Delta\theta}{\Delta t}=\omega_{0}+\alpha(t-t_{0})\\
+\omega=\frac{d\theta}{dt}=\frac{\Delta\theta}{\Delta t}=\omega_{0}+\alpha(t-t_{0}) & \omega=\frac{2\pi}{T}=2\pi f\\
 \alpha=\frac{\Delta\omega}{\Delta t}=\frac{d\omega}{dt}=\frac{d^{2}\theta}{dt}=\frac{\omega-\omega_{0}}{t-t_{0}}
 \end{cases}$
 
@@ -213,7 +219,7 @@ $\qquad${*}Tercera ley (acción-reacción): $\mathbf{F}_{A,B}=\mathbf{-F}_{B,A}$
 
 Fueza - definiciones:
 
-$\qquad${*}Fuerza: $\mathbf{F}=m\mathbf{a}$, $\mathrm{\left[N\right]=\frac{1kg}{1m/s^{2}}=\frac{kg\:m}{s^{2}}}$
+$\qquad${*}Fuerza: $\mathbf{F}=m\mathbf{a}$
 
 $\qquad${*}Sumatorias: $\sum F_{x}=ma_{x},\;\sum F_{y}=ma_{y},\;\sum F_{c}=ma_{c}=m\omega^{2}R$
 
@@ -265,7 +271,7 @@ y con $0<\mu_{d}<\mu_{e}<1$
 {*}Producto fuerza-desplazamiento: $\begin{cases}
 F\Delta x=ma\Delta x=m\frac{v_{f}-v_{0}}{\Delta t}\frac{1}{2}(v_{f}-v_{0})\Delta t\\
 F\Delta x=\frac{1}{2}mv_{f}^{2}-\frac{1}{2}mv_{0}^{2}
-\end{cases}$, $\mathrm{\left[J\right]=N\:m}$
+\end{cases}$
 
 {*}Trabajo en una dimensión: 
 
@@ -296,8 +302,7 @@ $\qquad${*}Teorema del trabajo-energía cinética: $\sum W_{\mathbf{F}}=\Delta E_{
 
 \textbf{\underline{Potencia y energía potencial:}}
 
-{*}Definición de potencia: $P=\frac{dW}{dt}=\mathbf{F\cdot v}=Fv\cos\theta$,
-$\mathrm{\left[W\right]=\frac{J}{s}}$
+{*}Definición de potencia: $P=\frac{dW}{dt}=\mathbf{F\cdot v}=Fv\cos\theta$
 
 {*}Energía potencial ($U,$$\:$E$_{p}$):
 
@@ -332,8 +337,6 @@ $\qquad\quad$$E_{m}=E_{c_{sist}}+U_{sist}=cte$
 
 $\qquad\quad$$E_{c_{f}}+U_{f}=U_{c_{i}}+U_{i}$
 
-$\qquad${*}Energía total de un sistema: $E_{sist}=E_{m}+E_{term}+E_{quim}+E_{otras}$
-
 $\qquad${*}Conservación de la energía en un sistema: $E_{entrada}-E_{salida}=\Delta E_{sist}$
 
 $\qquad${*}Teorema trabajo-energía: $W_{ext}=\Delta E_{sist}=\Delta E_{m}+\Delta E_{term}+\Delta E_{quim}+\Delta E_{otras}$
@@ -353,8 +356,6 @@ $\qquad${*}Ecuaciones de aceleración angular constante:
 \end{align*}
 
 $\qquad${*}Balance de energía: $W_{\mathbf{F}_{c}+\mathbf{F}_{nc}}^{A\rightarrow B}=W_{\mathbf{F}_{c}}^{A\rightarrow B}+W_{\mathbf{F}_{nc}}^{A\rightarrow B}=\Delta E_{c}=E_{c_{B}}-E_{c_{A}}$
-
-$\qquad${*}Energía mecánica: $E_{m}=E_{c}+E_{p}$
 
 $\qquad${*}Principio de conservación de la energía: $W_{\mathbf{F}_{nc}}^{A\rightarrow B}=E_{m_{B}}-E_{m_{A}}$
 
