@@ -2311,7 +2311,7 @@ con
 \end_inset
 
 , 
-\begin_inset Formula $v_{e}=\sqrt{2gR_{t}}≈11.2\frac{\mathrm{km}}{\mathrm{s}}$
+\begin_inset Formula $v_{e}=\sqrt{\frac{2gM_{T}}{R_{t}}}≈11.2\frac{\mathrm{km}}{\mathrm{s}}$
 \end_inset
 
 
