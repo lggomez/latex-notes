@@ -1431,23 +1431,19 @@ Fueza y momento:
 \begin_inset Formula $\qquad$
 \end_inset
 
-*Momento: 
-\begin_inset Formula $\mathbf{M}_{F}=\mathbf{F}\times\mathbf{d}$
-\end_inset
-
-, 
-\begin_inset Formula $M_{F}=Fd\sin a$
-\end_inset
-
-, y dado un punto 
-\begin_inset Formula $O$
+*Momento (torque): dado un punto de aplicación 
+\begin_inset Formula $\mathrm{O}$
 \end_inset
 
 : 
-\begin_inset Formula $\mathbf{M}_{\mathbf{R}}^{O}=\sum_{i}\mathbf{\mathbf{M}_{F_{i}}^{\mathrm{\mathit{O}}}}$
+\begin_inset Formula $\mathbf{\mathbf{M}}_{\mathbf{R}}^{\mathrm{O}}=\mathbf{F}\times\mathbf{d}$
 \end_inset
 
+, 
+\begin_inset Formula $M_{F}^{O}=Fd\sin a$
+\end_inset
 
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1462,7 +1458,11 @@ nte
 \begin_inset Formula $\qquad\quad$
 \end_inset
 
-en un punto es igual a la suma de los pares contribuyentes:
+en un punto es igual a la suma de los pares contribuyentes: 
+\begin_inset Formula $\sum_{i}\mathbf{\mathbf{M}_{F_{\mathit{i}}}^{\mathrm{\mathit{\mathrm{O}}}}=\mathbf{M}_{\mathbf{R}}^{\mathrm{O}}}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2092,7 +2092,7 @@ underline{Impulso y cantidad de movimiento:}
 \end_inset
 
 , 
-\begin_inset Formula ${\rm \left[N\:s\right]=\left[kg\:s\right]}$
+\begin_inset Formula ${\rm \left[N\:s\right]=\left[kg\:\frac{m}{s}\right]}$
 \end_inset
 
 
@@ -2104,7 +2104,7 @@ underline{Impulso y cantidad de movimiento:}
 \end_inset
 
 , 
-\begin_inset Formula ${\rm \left[N\:s\right]=\left[kg\:s\right]}$
+\begin_inset Formula ${\rm \left[kg\:\frac{m}{s}\right]}$
 \end_inset
 
 
